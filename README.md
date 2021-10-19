@@ -2,7 +2,7 @@
 Full stack password manager app
 
 ## TODO
-  - [] show password on <button> when clicked
+  - [x] show password on button when clicked
   - [] Add password to lock the available password list
 
 ## misc
