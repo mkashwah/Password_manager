@@ -19,7 +19,6 @@ function App() {
 
   useEffect(()=>{
     Axios.get('http://localhost:3001/showpasswords').then((response) => {
-    // console.log(response.data);
     setPasswordList(response.data)
 
     });
@@ -28,7 +27,7 @@ function App() {
   }, [])
 
   const decryptPassword = (encryption) =>{
-    // console.log('before axios.post')
+    // console.log('before axios.post')   //debugging
     Axios.post('http://localhost:3001/decryptpassword', {password: encryption.password, 
     iv: encryption.iv}).then((response) => {
       setPasswordList(passwordList.map((val) =>{
